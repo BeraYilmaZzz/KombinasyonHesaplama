@@ -10,14 +10,14 @@ public class Main {
         System.out.print("İkinci kümeniz kaç elemanlı ? = ");
         r = in.nextInt();
 
-        if (r <= n) { // r, n'den küçük veya eşit olmalı
+        if (r <= n) {
             for (int i = 1; i <= n; i++) {
                 countn = countn * i;
             }
             for (int i = 1; i <= r; i++) {
                 countr = countr * i;
             }
-            for (int i = 1; i <= (n - r); i++) { // (n - r) aralığına kadar döngü
+            for (int i = 1; i <= (n - r); i++) {
                 countf = countf * i;
             }
             int C = countn / (countr * countf); // Kombinasyon hesaplama formülü
